@@ -24,7 +24,7 @@ async def get_sticker_hash(event):
         await event.reply('Пожалуйста, используйте эту команду в ответ на сообщение с стикером.')
 
 
-@client.on(events.NewMessage(pattern='/all'))
+@client.on(events.NewMessage(pattern='/all|@all|@everyone|Пойдете гулять?'))
 async def tag_all(event):
     chat = await event.get_input_chat()
     participants = await client.get_participants(chat)
@@ -70,7 +70,7 @@ stickers = [
     ]
  
 
-@client.on(events.NewMessage(pattern='хохлы'))
+@client.on(events.NewMessage(pattern=r'.*хохлы.*'))
 async def handle_message(event):
     sticker = random.choice(stickers)
     await client.send_file(
