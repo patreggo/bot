@@ -45,7 +45,7 @@ async def tag_all(event):
 @client.on(events.NewMessage(pattern='дембель|Дембель'))
 async def time_until_19_june(event):
     now = datetime.now()
-    target_date = datetime(now.year, 6, 19)
+    target_date = datetime(now.year, 6, 19, 13)
 
     if now > target_date:
         target_date = datetime(now.year + 1, 6, 19)
