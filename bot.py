@@ -1,14 +1,16 @@
 from datetime import datetime
+import re
+
 from telethon.tl.types import InputDocument
 from telethon import TelegramClient, events, types
 import random
-
 
 API_ID = '20853819'
 API_HASH = 'baba4e824938a2abacff8f1af5deeb92'
 BOT_TOKEN = '7304199579:AAEfU4_LfqYCF4r7udnLpwlK1_WabR1Bas8'
 
 client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+
 
 @client.on(events.NewMessage(pattern='стик'))
 async def get_sticker_hash(event):
@@ -17,7 +19,8 @@ async def get_sticker_hash(event):
         if reply_message and reply_message.sticker:
             file_id = reply_message.sticker.id
             file_hash = reply_message.sticker.access_hash
-            await event.reply(f'ID стикера: {file_id}\nHash стикера: {file_hash}\nFile Reference: {reply_message.sticker.file_reference}')
+            await event.reply(
+                f'ID стикера: {file_id}\nHash стикера: {file_hash}\nFile Reference: {reply_message.sticker.file_reference}')
         else:
             await event.reply('Пожалуйста, ответьте на сообщение с стикером.')
     else:
@@ -39,12 +42,11 @@ async def tag_all(event):
             await client.send_message(chat, 'Не удалось найти участников для тега.')
 
 
-@client.on(events.NewMessage(pattern='дембель'))
+@client.on(events.NewMessage(pattern='дембель|Дембель'))
 async def time_until_19_june(event):
     now = datetime.now()
     target_date = datetime(now.year, 6, 19)
 
-    # Если текущая дата позже 19 июня этого года, берем 19 июня следующего года
     if now > target_date:
         target_date = datetime(now.year + 1, 6, 19)
 
@@ -56,32 +58,51 @@ async def time_until_19_june(event):
     await client.send_message(event.chat_id,
                               f'До дембеля осталось: {days_left} дней, {hours_left} часов и {minutes_left} минут.')
 
+
 stickers = [
     {
-        'id': 5213382276280231277,  
-        'hash': -5412342535908628580,  
-        'file_reference': b'\x01\x00\x00\x00"fj\xe9m\xd5\xc7O\xd0ey\x86)w\x03\t_\xe4\x9f\xee\xb3'   
+        'id': 5213382276280231277,
+        'hash': -5412342535908628580,
+        'file_reference': b'\x01\x00\x00\x00"fj\xe9m\xd5\xc7O\xd0ey\x86)w\x03\t_\xe4\x9f\xee\xb3'
     },
     {
-        'id': 5213042054740845429,  
-        'hash': 978015430433717147,  
-        'file_reference': b'\x01\x00\x00\x00/fj\xeb\x94\xda\xf5\xe2\xc0\xe5\x11\x01\x06k\xd3\xd2 f\xe9'  
+        'id': 5213042054740845429,
+        'hash': 978015430433717147,
+        'file_reference': b'\x01\x00\x00\x00/fj\xeb\x94\xda\xf5\xe2\xc0\xe5\x11\x01\x06k\xd3\xd2 f\xe9'
     }
-    ]
- 
+]
 
-@client.on(events.NewMessage(pattern=r'.*хохлы.*'))
-async def handle_message(event):
-    sticker = random.choice(stickers)
-    await client.send_file(
-        event.chat_id,
-        file=InputDocument(
-            id=sticker['id'],
-            access_hash=sticker['hash'],
-            file_reference=sticker['file_reference'],
-        ),
-        reply_to=event.message.id
-    )
+
+# @client.on(events.NewMessage(pattern=r'.*хохлы.*'))
+# async def handle_message(event):
+#     sticker = random.choice(stickers)
+#     await client.send_file(
+#         event.chat_id,
+#         file=InputDocument(
+#             id=sticker['id'],
+#             access_hash=sticker['hash'],
+#             file_reference=sticker['file_reference'],
+#         ),
+#         reply_to=event.message.id
+#     )
+
+
+@client.on(events.NewMessage)
+async def respond_to_keyword(event):
+    keyword = 'хохлы'  # Укажите ваше слово здесь
+    pattern = rf'\b{keyword}\b'
+    if re.search(pattern, event.raw_text, re.IGNORECASE):
+        sticker = random.choice(stickers)
+        await client.send_file(
+            event.chat_id,
+            file=InputDocument(
+                id=sticker['id'],
+                access_hash=sticker['hash'],
+                file_reference=sticker['file_reference'],
+            ),
+            reply_to=event.message.id
+        )
+
 
 if __name__ == '__main__':
     client.run_until_disconnected()
