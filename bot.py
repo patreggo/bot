@@ -14,7 +14,7 @@ client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN
 # Список для хранения сообщений
 messages_storage = []
 user_message_count = 0  # Счетчик сообщений пользователей
-messages_interval = random.randint(3, 8)  # Интервал сообщений
+messages_interval = 5  # Установлен фиксированный интервал сообщений
 
 
 # Функция для генерации случайного сообщения
