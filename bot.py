@@ -11,6 +11,36 @@ BOT_TOKEN = '7304199579:AAEfU4_LfqYCF4r7udnLpwlK1_WabR1Bas8'
 
 client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
+# Список для хранения сообщений
+messages_storage = []
+
+# Функция для генерации случайного сообщения
+def generate_random_message():
+    if not messages_storage:
+        return None
+    
+    # Разбиваем сообщения на слова
+    words = ' '.join(messages_storage).split()
+    
+    # Генерируем случайное сообщение из 3-5 слов
+    message_length = random.randint(1, 10)
+    random_words = random.sample(words, min(len(words), message_length))
+    
+    return ' '.join(random_words)
+
+# Функция для отправки случайных сообщений
+async def send_random_message(chat_id):
+    while True:
+        message = generate_random_message()
+        if message:
+            await client.send_message(chat_id, message)
+        await asyncio.sleep(random.randint(5, 15))  # случайный интервал между 5 и 15 секундами
+
+@client.on(events.NewMessage)
+async def store_message(event):
+    if event.raw_text:
+        messages_storage.append(event.raw_text)
+
 
 @client.on(events.NewMessage(pattern='стик'))
 async def get_sticker_hash(event):
@@ -103,7 +133,11 @@ async def respond_to_keyword(event):
             reply_to=event.message.id
         )
 
+@client.on(events.NewMessage(pattern='/chatid'))
+async def get_chat_id(event):
+    await event.reply(f'Ваш ID чата: {event.chat_id}')
 
 if __name__ == '__main__':
+    client.loop.create_task(send_random_message('YOUR_CHAT_ID'))
     client.run_until_disconnected()
 
