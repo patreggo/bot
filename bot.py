@@ -11,30 +11,36 @@ BOT_TOKEN = '7304199579:AAEfU4_LfqYCF4r7udnLpwlK1_WabR1Bas8'
 
 client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-# Список для хранения сообщений
 messages_storage = []
+user_message_count = 0  # Счетчик сообщений пользователей
+messages_interval = 13  # Интервал сообщений
+
 
 # Функция для генерации случайного сообщения
 def generate_random_message():
     if not messages_storage:
         return None
-    
-    # Разбиваем сообщения на слова
+
     words = ' '.join(messages_storage).split()
-    
-    # Генерируем случайное сообщение из 3-5 слов
-    message_length = random.randint(1, 10)
+    message_length = random.randint(1, 15)
     random_words = random.sample(words, min(len(words), message_length))
-    
+
     return ' '.join(random_words)
 
-# Функция для отправки случайных сообщений
-async def send_random_message(chat_id):
-    while True:
-        message = generate_random_message()
-        if message:
-            await client.send_message(chat_id, message)
-        await asyncio.sleep(random.randint(5, 15))  # случайный интервал между 5 и 15 секундами
+
+@client.on(events.NewMessage)
+async def store_message(event):
+    global user_message_count
+    if event.raw_text:
+        messages_storage.append(event.raw_text)
+        user_message_count += 1
+
+        # Проверяем, достигли ли мы интервала
+        if user_message_count >= messages_interval:
+            message = generate_random_message()
+            if message:
+                await event.reply(message)  # Отправляем сообщение в ответ на сообщение пользователя
+            user_message_count = 0  # Сбрасываем счетчик
 
 @client.on(events.NewMessage)
 async def store_message(event):
