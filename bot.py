@@ -14,7 +14,7 @@ client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN
 # Список для хранения сообщений
 messages_storage = []
 user_message_count = 0  # Счетчик сообщений пользователей
-messages_interval = 5  # Установлен фиксированный интервал сообщений
+messages_interval = random.randint(1, 10)  # Установлен фиксированный интервал сообщений
 
 
 # Функция для генерации случайного сообщения
@@ -31,7 +31,7 @@ def generate_random_message():
 
 @client.on(events.NewMessage)
 async def store_message(event):
-    global user_message_count
+    global user_message_count, messages_interval
     if event.raw_text:
         messages_storage.append(event.raw_text)
         user_message_count += 1
@@ -41,8 +41,10 @@ async def store_message(event):
             message = generate_random_message()
             if message:
                 await client.send_message(event.chat_id, message)  # Отправляем сообщение в беседу
-            user_message_count = 0  # Сбрасываем счетчик
 
+            # Сбрасываем счетчик и устанавливаем новый интервал
+            user_message_count = 0
+            messages_interval = random.randint(3, 8)
 
 @client.on(events.NewMessage(pattern='стик'))
 async def get_sticker_hash(event):
