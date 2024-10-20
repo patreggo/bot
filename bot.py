@@ -138,6 +138,6 @@ async def get_chat_id(event):
     await event.reply(f'Ваш ID чата: {event.chat_id}')
 
 if __name__ == '__main__':
-    client.loop.create_task(send_random_message('YOUR_CHAT_ID'))
+    client.loop.create_task(send_random_message('-1001909447595'))
     client.run_until_disconnected()
 
