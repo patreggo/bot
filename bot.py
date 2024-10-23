@@ -1,6 +1,6 @@
 from datetime import datetime
 import re
-
+import json
 from telethon.tl.types import InputDocument
 from telethon import TelegramClient, events, types
 import random
@@ -8,43 +8,73 @@ import random
 API_ID = '20853819'
 API_HASH = 'baba4e824938a2abacff8f1af5deeb92'
 BOT_TOKEN = '7304199579:AAEfU4_LfqYCF4r7udnLpwlK1_WabR1Bas8'
+DATA_FILE = 'messages_data.json'
 
 client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-# Список для хранения сообщений
-messages_storage = []
-user_message_count = 0  # Счетчик сообщений пользователей
-messages_interval = random.randint(1, 10)  # Установлен фиксированный интервал сообщений
+chat_data = {}
 
+# Загрузка данных из файла
+def load_data():
+    global chat_data
+    try:
+        with open(DATA_FILE, 'r') as f:
+            chat_data = json.load(f)
+    except FileNotFoundError:
+        chat_data = {}
 
-# Функция для генерации случайного сообщения
-def generate_random_message():
+# Сохранение данных в файл
+def save_data():
+    with open(DATA_FILE, 'w') as f:
+        json.dump(chat_data, f)
+
+# Функция для генерации сообщения из последовательных частей разных сообщений
+def generate_random_message(chat_id):
+    messages_storage = chat_data.get(str(chat_id), {}).get('messages', [])
     if not messages_storage:
         return None
 
-    words = ' '.join(messages_storage).split()
-    message_length = random.randint(1, 14)
-    random_words = random.sample(words, min(len(words), message_length))
+    message_fragments = []
 
-    return ' '.join(random_words)
+    # Выбираем 2-3 случайных сообщения и берем из них последовательные части
+    for _ in range(random.randint(2, 3)):
+        message = random.choice(messages_storage)  # Выбираем случайное сообщение
+        words = message.split()  # Разбиваем сообщение на слова
 
+        if len(words) > 0:  # Берем только те сообщения, где более 3 слов
+            start_index = 0  # Начинаем с начала сообщения
+            fragment_length = random.randint(1, min(4, len(words)))  # Длина фрагмента (от 3 до 7 слов)
+            message_fragments.append(' '.join(words[start_index:start_index + fragment_length]))
+
+    return ' '.join(message_fragments)  # Объединяем фрагменты в одно сообщение
 
 @client.on(events.NewMessage)
 async def store_message(event):
-    global user_message_count, messages_interval
-    if event.raw_text:
-        messages_storage.append(event.raw_text)
-        user_message_count += 1
+    global chat_data
 
-        # Проверяем, достигли ли мы интервала
-        if user_message_count >= messages_interval:
-            message = generate_random_message()
+    chat_id = str(event.chat_id)
+    if chat_id not in chat_data:
+        chat_data[chat_id] = {
+            'messages': [],
+            'user_message_count': 0,
+            'messages_interval': random.randint(3, 8)  # Случайный интервал для этого чата
+        }
+
+    if event.raw_text:
+        chat_data[chat_id]['messages'].append(event.raw_text)
+        chat_data[chat_id]['user_message_count'] += 1
+
+        # Проверяем, достигли ли мы интервала для этого чата
+        if chat_data[chat_id]['user_message_count'] >= chat_data[chat_id]['messages_interval']:
+            message = generate_random_message(chat_id)
             if message:
-                await client.send_message(event.chat_id, message)  # Отправляем сообщение в беседу
+                await client.send_message(event.chat_id, message)  # Отправляем сообщение в тот же чат
 
             # Сбрасываем счетчик и устанавливаем новый интервал
-            user_message_count = 0
-            messages_interval = random.randint(3, 8)
+            chat_data[chat_id]['user_message_count'] = 0
+            chat_data[chat_id]['messages_interval'] = random.randint(3, 8)
+
+        save_data()  # Сохраняем данные после каждого нового сообщения
 
 @client.on(events.NewMessage(pattern='стик'))
 async def get_sticker_hash(event):
@@ -140,6 +170,8 @@ async def respond_to_keyword(event):
 @client.on(events.NewMessage(pattern='/chatid'))
 async def get_chat_id(event):
     await event.reply(f'Ваш ID чата: {event.chat_id}')
+
+load_data()
 
 if __name__ == '__main__':
     client.run_until_disconnected()
