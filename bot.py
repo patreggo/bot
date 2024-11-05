@@ -26,9 +26,9 @@ def load_data():
 # Сохранение данных в файл
 def save_data():
     with open(DATA_FILE, 'w') as f:
-        json.dump(chat_data, f)
+        json.dump(chat_data, f, ensure_ascii=False, indent=4)
 
-# Функция для генерации сообщения из последовательных частей разных сообщений
+# Функция для генерации случайного текстового сообщения
 def generate_random_message(chat_id):
     messages_storage = chat_data.get(str(chat_id), {}).get('messages', [])
     if not messages_storage:
@@ -38,15 +38,31 @@ def generate_random_message(chat_id):
 
     # Выбираем 2-3 случайных сообщения и берем из них последовательные части
     for _ in range(random.randint(2, 3)):
-        message = random.choice(messages_storage)  # Выбираем случайное сообщение
-        words = message.split()  # Разбиваем сообщение на слова
+        message_data = random.choice(messages_storage)
+        message_text = message_data['text']
+        sender_name = message_data['sender']
+        words = message_text.split()
 
-        if len(words) > 0:  # Берем только те сообщения, где более 3 слов
-            start_index = 0  # Начинаем с начала сообщения
-            fragment_length = random.randint(1, min(4, len(words)))  # Длина фрагмента (от 3 до 7 слов)
-            message_fragments.append(' '.join(words[start_index:start_index + fragment_length]))
+        if len(words) > 0:
+            start_index = 0
+            fragment_length = random.randint(1, min(4, len(words)))
+            fragment_text = ' '.join(words[start_index:start_index + fragment_length])
+            message_fragments.append(f"{sender_name}: {fragment_text}")
 
-    return ' '.join(message_fragments)  # Объединяем фрагменты в одно сообщение
+    return ' '.join(message_fragments)
+
+# Функция для генерации случайного стикера
+async def generate_random_sticker(chat_id):
+    stickers_storage = chat_data.get(str(chat_id), {}).get('stickers', [])
+    if not stickers_storage:
+        return None
+
+    sticker_data = random.choice(stickers_storage)
+    return InputDocument(
+        id=sticker_data['id'],
+        access_hash=sticker_data['hash'],
+        file_reference=sticker_data['file_reference']
+    )
 
 @client.on(events.NewMessage)
 async def store_message(event):
@@ -56,25 +72,45 @@ async def store_message(event):
     if chat_id not in chat_data:
         chat_data[chat_id] = {
             'messages': [],
+            'stickers': [],
             'user_message_count': 0,
-            'messages_interval': random.randint(7,18)  # Случайный интервал для этого чата
+            'messages_interval': random.randint(7,18)
         }
 
-    if event.raw_text:
-        chat_data[chat_id]['messages'].append(event.raw_text)
-        chat_data[chat_id]['user_message_count'] += 1
+    if event.sticker:  # Если сообщение является стикером, сохраняем стикер
+        sticker = event.sticker
+        chat_data[chat_id]['stickers'].append({
+            'id': sticker.id,
+            'hash': sticker.access_hash,
+            'file_reference': sticker.file_reference
+        })
+    elif event.raw_text:  # Если сообщение текстовое, сохраняем текст
+        chat_data[chat_id]['messages'].append({
+            'text': event.raw_text,
+            'sender': event.sender_id if event.sender_id else "Unknown"
+        })
 
-        # Проверяем, достигли ли мы интервала для этого чата
-        if chat_data[chat_id]['user_message_count'] >= chat_data[chat_id]['messages_interval']:
+    chat_data[chat_id]['user_message_count'] += 1
+
+    # Проверяем, достигли ли мы интервала для этого чата
+    if chat_data[chat_id]['user_message_count'] >= chat_data[chat_id]['messages_interval']:
+        # Случайный выбор между отправкой текста и стикера
+        if random.choice([True, False]) and chat_data[chat_id]['stickers']:
+            # Отправляем случайный стикер
+            sticker = await generate_random_sticker(chat_id)
+            if sticker:
+                await client.send_file(event.chat_id, file=sticker)
+        else:
+            # Отправляем случайное текстовое сообщение
             message = generate_random_message(chat_id)
             if message:
-                await client.send_message(event.chat_id, message)  # Отправляем сообщение в тот же чат
+                await client.send_message(event.chat_id, message)
 
-            # Сбрасываем счетчик и устанавливаем новый интервал
-            chat_data[chat_id]['user_message_count'] = 0
-            chat_data[chat_id]['messages_interval'] = random.randint(8, 18)
+        # Сбрасываем счетчик и устанавливаем новый интервал
+        chat_data[chat_id]['user_message_count'] = 0
+        chat_data[chat_id]['messages_interval'] = random.randint(8, 18)
 
-        save_data()  # Сохраняем данные после каждого нового сообщения
+    save_data()  # Сохраняем данные после каждого нового сообщения
 
 @client.on(events.NewMessage(pattern='стик'))
 async def get_sticker_hash(event):
@@ -90,7 +126,6 @@ async def get_sticker_hash(event):
     else:
         await event.reply('Пожалуйста, используйте эту команду в ответ на сообщение с стикером.')
 
-
 @client.on(events.NewMessage(pattern='/all|@all|@everyone|Пойдете гулять?'))
 async def tag_all(event):
     chat = await event.get_input_chat()
@@ -104,7 +139,6 @@ async def tag_all(event):
             await client.send_message(chat, ''.join(mention))
         else:
             await client.send_message(chat, 'Не удалось найти участников для тега.')
-
 
 @client.on(events.NewMessage(pattern='дембель|Дембель'))
 async def time_until_19_june(event):
@@ -122,7 +156,6 @@ async def time_until_19_june(event):
     await client.send_message(event.chat_id,
                               f'До дембеля осталось: {days_left} дней, {hours_left} часов и {minutes_left} минут.')
 
-
 stickers = [
     {
         'id': 5213382276280231277,
@@ -136,24 +169,9 @@ stickers = [
     }
 ]
 
-
-# @client.on(events.NewMessage(pattern=r'.*хохлы.*'))
-# async def handle_message(event):
-#     sticker = random.choice(stickers)
-#     await client.send_file(
-#         event.chat_id,
-#         file=InputDocument(
-#             id=sticker['id'],
-#             access_hash=sticker['hash'],
-#             file_reference=sticker['file_reference'],
-#         ),
-#         reply_to=event.message.id
-#     )
-
-
 @client.on(events.NewMessage)
 async def respond_to_keyword(event):
-    keyword = 'хохлы'  # Укажите ваше слово здесь
+    keyword = 'хохлы'
     pattern = rf'\b{keyword}\b'
     if re.search(pattern, event.raw_text, re.IGNORECASE):
         sticker = random.choice(stickers)
