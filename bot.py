@@ -57,7 +57,7 @@ async def store_message(event):
         chat_data[chat_id] = {
             'messages': [],
             'user_message_count': 0,
-            'messages_interval': random.randint(7,18)  # Случайный интервал для этого чата
+            'messages_interval': random.randint(3, 8)  # Случайный интервал для этого чата
         }
 
     if event.raw_text:
@@ -72,7 +72,7 @@ async def store_message(event):
 
             # Сбрасываем счетчик и устанавливаем новый интервал
             chat_data[chat_id]['user_message_count'] = 0
-            chat_data[chat_id]['messages_interval'] = random.randint(8, 18)
+            chat_data[chat_id]['messages_interval'] = random.randint(3, 8)
 
         save_data()  # Сохраняем данные после каждого нового сообщения
 
