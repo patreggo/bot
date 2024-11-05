@@ -57,7 +57,7 @@ async def store_message(event):
         chat_data[chat_id] = {
             'messages': [],
             'user_message_count': 0,
-            'messages_interval': random.randint(3, 8)  # Случайный интервал для этого чата
+            'messages_interval': random.randint(7, 15)  # Случайный интервал для этого чата
         }
 
     if event.raw_text:
