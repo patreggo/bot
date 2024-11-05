@@ -20,13 +20,16 @@ def load_data():
     try:
         with open(DATA_FILE, 'r') as f:
             chat_data = json.load(f)
+        print("Данные загружены успешно")
     except FileNotFoundError:
         chat_data = {}
+        print("Файл данных не найден, создано новое хранилище")
 
 # Сохранение данных в файл
 def save_data():
     with open(DATA_FILE, 'w') as f:
         json.dump(chat_data, f, ensure_ascii=False, indent=4)
+    print("Данные сохранены успешно")
 
 # Функция для генерации случайного текстового сообщения
 def generate_random_message(chat_id):
@@ -36,7 +39,6 @@ def generate_random_message(chat_id):
 
     message_fragments = []
 
-    # Выбираем 2-3 случайных сообщения и берем из них последовательные части
     for _ in range(random.randint(2, 3)):
         message_data = random.choice(messages_storage)
         message_text = message_data['text']
@@ -77,34 +79,41 @@ async def store_message(event):
             'messages_interval': random.randint(7,18)
         }
 
-    if event.sticker:  # Если сообщение является стикером, сохраняем стикер
+    # Сохраняем сообщение или стикер
+    if event.sticker:
         sticker = event.sticker
         chat_data[chat_id]['stickers'].append({
             'id': sticker.id,
             'hash': sticker.access_hash,
             'file_reference': sticker.file_reference
         })
-    elif event.raw_text:  # Если сообщение текстовое, сохраняем текст
+        print(f"Стикер сохранен в чат {chat_id}")
+    elif event.raw_text:
         chat_data[chat_id]['messages'].append({
             'text': event.raw_text,
             'sender': event.sender_id if event.sender_id else "Unknown"
         })
+        print(f"Сообщение сохранено в чат {chat_id}")
 
     chat_data[chat_id]['user_message_count'] += 1
 
     # Проверяем, достигли ли мы интервала для этого чата
     if chat_data[chat_id]['user_message_count'] >= chat_data[chat_id]['messages_interval']:
-        # Случайный выбор между отправкой текста и стикера
+        print("Достигнут интервал отправки случайного сообщения")
+
+        # Отправляем случайный стикер или сообщение
         if random.choice([True, False]) and chat_data[chat_id]['stickers']:
-            # Отправляем случайный стикер
             sticker = await generate_random_sticker(chat_id)
             if sticker:
                 await client.send_file(event.chat_id, file=sticker)
+                print("Отправлен случайный стикер")
         else:
-            # Отправляем случайное текстовое сообщение
             message = generate_random_message(chat_id)
             if message:
                 await client.send_message(event.chat_id, message)
+                print("Отправлено случайное сообщение:", message)
+            else:
+                print("Нет сообщений для отправки")
 
         # Сбрасываем счетчик и устанавливаем новый интервал
         chat_data[chat_id]['user_message_count'] = 0
@@ -131,7 +140,6 @@ async def tag_all(event):
     chat = await event.get_input_chat()
     participants = await client.get_participants(chat)
 
-    # Собираем всех участников в строку
     mention_list = [f'@{participant.username}' for participant in participants if participant.username]
 
     for mention in mention_list:
