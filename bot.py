@@ -70,9 +70,9 @@ async def store_message(event):
             if message:
                 await client.send_message(event.chat_id, message)  # Отправляем сообщение в тот же чат
 
-            # Сбрасываем счетчик и устанавливаем новый интервал
-            chat_data[chat_id]['user_message_count'] = 0
-            chat_data[chat_id]['messages_interval'] = random.randint(3, 8)
+        # Сбрасываем счетчик и устанавливаем новый интервал
+        chat_data[chat_id]['user_message_count'] = 0
+        chat_data[chat_id]['messages_interval'] = random.randint(8, 18)
 
         save_data()  # Сохраняем данные после каждого нового сообщения
 
@@ -90,13 +90,11 @@ async def get_sticker_hash(event):
     else:
         await event.reply('Пожалуйста, используйте эту команду в ответ на сообщение с стикером.')
 
-
 @client.on(events.NewMessage(pattern='/all|@all|@everyone|Пойдете гулять?'))
 async def tag_all(event):
     chat = await event.get_input_chat()
     participants = await client.get_participants(chat)
 
-    # Собираем всех участников в строку
     mention_list = [f'@{participant.username}' for participant in participants if participant.username]
 
     for mention in mention_list:
@@ -104,7 +102,6 @@ async def tag_all(event):
             await client.send_message(chat, ''.join(mention))
         else:
             await client.send_message(chat, 'Не удалось найти участников для тега.')
-
 
 @client.on(events.NewMessage(pattern='дембель|Дембель'))
 async def time_until_19_june(event):
@@ -121,7 +118,6 @@ async def time_until_19_june(event):
 
     await client.send_message(event.chat_id,
                               f'До дембеля осталось: {days_left} дней, {hours_left} часов и {minutes_left} минут.')
-
 
 stickers = [
     {
