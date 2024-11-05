@@ -1,6 +1,6 @@
+import json
 from datetime import datetime
 import re
-import json
 from telethon.tl.types import InputDocument
 from telethon import TelegramClient, events, types
 import random
@@ -8,10 +8,11 @@ import random
 API_ID = '20853819'
 API_HASH = 'baba4e824938a2abacff8f1af5deeb92'
 BOT_TOKEN = '7304199579:AAEfU4_LfqYCF4r7udnLpwlK1_WabR1Bas8'
-DATA_FILE = 'messages_data.json'
+DATA_FILE = 'messages_data.json'  # Файл для сохранения сообщений и данных
 
 client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
+# Глобальная структура для хранения данных по чатам
 chat_data = {}
 
 # Загрузка данных из файла
@@ -57,7 +58,7 @@ async def store_message(event):
         chat_data[chat_id] = {
             'messages': [],
             'user_message_count': 0,
-            'messages_interval': random.randint(7, 15)  # Случайный интервал для этого чата
+            'messages_interval': random.randint(7, 17)  # Случайный интервал для этого чата
         }
 
     if event.raw_text:
@@ -70,9 +71,9 @@ async def store_message(event):
             if message:
                 await client.send_message(event.chat_id, message)  # Отправляем сообщение в тот же чат
 
-        # Сбрасываем счетчик и устанавливаем новый интервал
-        chat_data[chat_id]['user_message_count'] = 0
-        chat_data[chat_id]['messages_interval'] = random.randint(8, 18)
+            # Сбрасываем счетчик и устанавливаем новый интервал
+            chat_data[chat_id]['user_message_count'] = 0
+            chat_data[chat_id]['messages_interval'] = random.randint(7, 17)
 
         save_data()  # Сохраняем данные после каждого нового сообщения
 
