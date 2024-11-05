@@ -72,6 +72,7 @@ async def store_message(event):
 
     chat_id = str(event.chat_id)
     if chat_id not in chat_data:
+        # Инициализируем новый чат с ключами 'messages' и 'stickers'
         chat_data[chat_id] = {
             'messages': [],
             'stickers': [],
