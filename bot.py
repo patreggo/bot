@@ -156,6 +156,19 @@ async def tag_all(event):
         await client.send_message(chat, mention)
 
 
+stickers = [
+    {
+        'id': 5213382276280231277,
+        'hash': -5412342535908628580,
+        'file_reference': b'\x01\x00\x00\x00"fj\xe9m\xd5\xc7O\xd0ey\x86)w\x03\t_\xe4\x9f\xee\xb3'
+    },
+    {
+        'id': 5213042054740845429,
+        'hash': 978015430433717147,
+        'file_reference': b'\x01\x00\x00\x00/fj\xeb\x94\xda\xf5\xe2\xc0\xe5\x11\x01\x06k\xd3\xd2 f\xe9'
+    }
+]
+
 @client.on(events.NewMessage)
 async def respond_to_keyword(event):
     keyword = 'хохлы'  # Укажите ваше слово здесь
