@@ -1,0 +1,1722 @@
+Server closed the connection: [Errno 104] Connection reset by peer
+Server closed the connection: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/root/bot/bot.py", line 7, in <module>
+    import spacy
+ModuleNotFoundError: No module named 'spacy'
+Unhandled exception on respond_to_keyword
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 164, in respond_to_keyword
+    sticker = random.choice(stickers)
+NameError: name 'stickers' is not defined
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py:-1: RuntimeWarning: coroutine 'UserMethods.get_me' was never awaited
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Attempt 1 at connecting failed: TimeoutError: 
+Attempt 2 at connecting failed: TimeoutError: 
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Attempt 1 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 2 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 3 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 4 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 5 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 6 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 1 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 2 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 3 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 4 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 5 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 6 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 1 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 2 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 3 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 4 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 5 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 6 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 1 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 2 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 3 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 4 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 5 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 6 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 1 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 2 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 3 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 4 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 5 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Attempt 6 at connecting failed: OSError: [Errno 113] Connect call failed ('149.154.167.51', 443)
+Automatic reconnection failed 5 time(s)
+Future exception was never retrieved
+future: <Future finished exception=ConnectionError('Connection to Telegram failed 5 time(s)')>
+ConnectionError: Connection to Telegram failed 5 time(s)
+Traceback (most recent call last):
+  File "/root/bot/bot.py", line 195, in <module>
+    client.run_until_disconnected()
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 96, in run_until_disconnected
+    return self.loop.run_until_complete(self._run_until_disconnected())
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 36, in _run_until_disconnected
+    result = await self.disconnected
+ConnectionError: Connection to Telegram failed 5 time(s)
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py:-1: RuntimeWarning: coroutine 'UserMethods.get_me' was never awaited
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
+Unhandled exception on handle_reply_to_bot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/root/bot/bot.py", line 116, in handle_reply_to_bot
+    if reply_message and reply_message.sender_id == client.get_me().id:
+AttributeError: 'coroutine' object has no attribute 'id'
