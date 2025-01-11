@@ -32,7 +32,7 @@ async def set_period(event):
         return
 
     args = event.raw_text.split()
-    if len(args) != 3:
+    if len(args) != 5:
         await event.reply("Используйте: /поставить на счетчик @username дни")
         return
 
@@ -45,6 +45,16 @@ async def set_period(event):
         await event.reply("Пожалуйста, укажите корректное количество дней.")
         return
 
+    # Проверяем, есть ли пользователь в беседе
+    chat = await event.get_chat()
+    participants = await client.get_participants(chat)
+    target_user = next((p for p in participants if p.username == target_username), None)
+
+    if not target_user:
+        await event.reply(f"Пользователь @{target_username} не найден в текущей беседе.")
+        return
+
+    # Устанавливаем период
     user_data = chat_data.setdefault(target_username, {})
     user_data['end_date'] = (datetime.now() + timedelta(days=days)).strftime('%Y-%m-%d %H:%M:%S')
     save_data()
