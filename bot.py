@@ -66,7 +66,7 @@ async def set_period(event):
 async def time_left(event):
     args = event.raw_text.split()
     if len(args) != 2:
-        await event.reply("Используйте: /time_left @username")
+        await event.reply("Используйте: /осталось @username")
         return
 
     target_username = args[1].lstrip('@')
