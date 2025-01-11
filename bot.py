@@ -36,9 +36,9 @@ async def set_period(event):
         await event.reply("Используйте: /поставить на счетчик @username дни")
         return
 
-    target_username = args[1].lstrip('@')
+    target_username = args[3].lstrip('@')
     try:
-        days = int(args[2])
+        days = int(args[4])
         if days <= 0:
             raise ValueError("Период должен быть положительным числом.")
     except ValueError:
