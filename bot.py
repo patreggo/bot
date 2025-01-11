@@ -1,5 +1,5 @@
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 import re
 from telethon.tl.types import InputDocument
 from telethon import TelegramClient, events, types
@@ -17,8 +17,65 @@ client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN
 # Глобальная структура для хранения данных
 chat_data = {}
 
+ADMIN_USERS = ['gib00ba', 'EdwinPl2']
+
 # Загружаем модель spaCy для обработки текста
 nlp = spacy.load("ru_core_news_sm")
+
+@client.on(events.NewMessage(pattern='/поставить на счетчик'))
+async def set_period(event):
+    sender = await event.get_sender()
+    username = sender.username
+
+    if username not in ADMIN_USERS:
+        await event.reply("У вас нет прав для выполнения этой команды.")
+        return
+
+    args = event.raw_text.split()
+    if len(args) != 3:
+        await event.reply("Используйте: /поставить на счетчик @username дни")
+        return
+
+    target_username = args[1].lstrip('@')
+    try:
+        days = int(args[2])
+        if days <= 0:
+            raise ValueError("Период должен быть положительным числом.")
+    except ValueError:
+        await event.reply("Пожалуйста, укажите корректное количество дней.")
+        return
+
+    user_data = chat_data.setdefault(target_username, {})
+    user_data['end_date'] = (datetime.now() + timedelta(days=days)).strftime('%Y-%m-%d %H:%M:%S')
+    save_data()
+
+    await event.reply(f"Период для @{target_username} установлен на {days} дней.")
+
+# Проверка оставшегося времени
+@client.on(events.NewMessage(pattern='/осталось'))
+async def time_left(event):
+    args = event.raw_text.split()
+    if len(args) != 2:
+        await event.reply("Используйте: /time_left @username")
+        return
+
+    target_username = args[1].lstrip('@')
+    user_data = chat_data.get(target_username)
+
+    if not user_data or 'end_date' not in user_data:
+        await event.reply(f"Для пользователя @{target_username} не установлен период.")
+        return
+
+    end_date = datetime.strptime(user_data['end_date'], '%Y-%m-%d %H:%M:%S')
+    remaining_time = end_date - datetime.now()
+
+    if remaining_time.total_seconds() <= 0:
+        await event.reply(f"Время для @{target_username} истекло.")
+    else:
+        days, seconds = divmod(remaining_time.total_seconds(), 86400)
+        hours, seconds = divmod(seconds, 3600)
+        minutes, _ = divmod(seconds, 60)
+        await event.reply(f"Осталось {int(days)} дней, {int(hours)} часов, {int(minutes)} минут для @{target_username}.")
 
 # Загрузка данных из файла
 def load_data():
