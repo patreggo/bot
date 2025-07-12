@@ -9,7 +9,7 @@ import spacy
 # Telegram API
 API_ID = '20853819'
 API_HASH = 'baba4e824938a2abacff8f1af5deeb92'
-BOT_TOKEN = '7304199579:AAEfU4_LfqYCF4r7udnLpwlK1_WabR1Bas8'
+BOT_TOKEN = '7304199579:AAFiD5F9_qz-oHHmu8VbnO4ey95dBbW2QnU'
 DATA_FILE = 'messages_data.json'
 
 client = TelegramClient('TagAllBot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
